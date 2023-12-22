@@ -19,5 +19,4 @@ def juego_piedra_papel_tijera():
         resultado = determinar_ganador(jugador1, jugador2)
         print(resultado)
 
-if __name__ == "__main__":
-    juego_piedra_papel_tijera()
+juego_piedra_papel_tijera()

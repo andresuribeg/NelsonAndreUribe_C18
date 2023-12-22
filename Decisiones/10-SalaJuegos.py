@@ -14,10 +14,10 @@ class SalaDeJuegos:
         else:
             print("No tienes suficientes créditos para acceder a ninguna sala.")
 
-if __name__ == "__main__":
-    try:
-        coins_usuario = int(input("Ingrese la cantidad de créditos que tiene el usuario: "))
-        sala = SalaDeJuegos(coins_usuario)
-        sala.ingreso_salas()
-    except ValueError:
-        print("Por favor, ingrese una cantidad válida de créditos.")
+
+try:
+    coins_usuario = int(input("Ingrese la cantidad de créditos que tiene el usuario: "))
+    sala = SalaDeJuegos(coins_usuario)
+    sala.ingreso_salas()
+except ValueError:
+    print("Por favor, ingrese una cantidad válida de créditos.")
