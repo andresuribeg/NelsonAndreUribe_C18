@@ -11,9 +11,8 @@ def contar_regresivo(horas, minutos, segundos):
     
     print("¡Conteo regresivo completado!")
 
-if __name__ == "__main__":
-    horas = 0 
-    minutos = 0
-    segundos = 10
+horas = 0 
+minutos = 0
+segundos = 10
     
-    contar_regresivo(horas, minutos, segundos)
+contar_regresivo(horas, minutos, segundos)

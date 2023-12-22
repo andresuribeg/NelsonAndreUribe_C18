@@ -22,17 +22,17 @@ class Combos:
             print("Opción no válida. Por favor, elige un número válido del menú.")
                         
 
-if __name__ == "__main__":
-    restaurante = Combos()
 
-    restaurante.mostrar_menu()
-    seleccion = input("Ingrese el número del combo que desea (0 para salir): ")
+restaurante = Combos()
 
-    try:
-        numero_combo = int(seleccion)
-        if numero_combo == 0:
-            print("Gracias por visitarnos!")
-        else:
-                restaurante.ordenar_combo(numero_combo)
-    except ValueError:
-        print("Por favor, ingrese un número válido.")
+restaurante.mostrar_menu()
+seleccion = input("Ingrese el número del combo que desea (0 para salir): ")
+
+try:
+    numero_combo = int(seleccion)
+    if numero_combo == 0:
+        print("Gracias por visitarnos!")
+    else:
+            restaurante.ordenar_combo(numero_combo)
+except ValueError:
+    print("Por favor, ingrese un número válido.")
