@@ -8,7 +8,7 @@ def es_numero_perfecto(num):
     return suma_divisores == num
 
 try:
-    num_usuario = int(input("Ingrese un número: "))
+    num_usuario = int(input("Ingrese un número positivo: "))
 
     if num_usuario > 0:
         if es_numero_perfecto(num_usuario):
