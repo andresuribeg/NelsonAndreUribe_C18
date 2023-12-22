@@ -15,9 +15,9 @@ class Restaurante:
         else:
             print("Elija carne, pescado o verdura.")
 
-if __name__ == "__main__":
-    restaurante = Restaurante()
 
-    eleccion_cliente = input("¿Seleccione el menú de su preferencia (carne, pescado o verdura)? ")
+restaurante = Restaurante()
 
-    restaurante.tomar_pedido(eleccion_cliente)
+eleccion_cliente = input("¿Seleccione el menú de su preferencia (carne, pescado o verdura)? ")
+
+restaurante.tomar_pedido(eleccion_cliente)
